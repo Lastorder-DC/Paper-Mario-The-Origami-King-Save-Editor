@@ -119,7 +119,8 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(461, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(538, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -130,15 +131,15 @@
             this.exportToolStripMenuItem,
             this.settingsToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.fileToolStripMenuItem.Text = "파일(&F)";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.openToolStripMenuItem.Text = "&Open...";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.openToolStripMenuItem.Text = "열기(&O)";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // exportToolStripMenuItem
@@ -146,15 +147,15 @@
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
             this.exportToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.S)));
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.exportToolStripMenuItem.Text = "&Save...";
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.exportToolStripMenuItem.Text = "저장(&S)";
             this.exportToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.settingsToolStripMenuItem.Text = "Settings...";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.settingsToolStripMenuItem.Text = "설정";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
@@ -163,21 +164,21 @@
             this.userGuideToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.helpToolStripMenuItem.Text = "도움말(&H)";
             // 
             // userGuideToolStripMenuItem
             // 
             this.userGuideToolStripMenuItem.Name = "userGuideToolStripMenuItem";
-            this.userGuideToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
-            this.userGuideToolStripMenuItem.Text = "User-Guide";
+            this.userGuideToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.userGuideToolStripMenuItem.Text = "이용자 가이드(&U)";
             this.userGuideToolStripMenuItem.Click += new System.EventHandler(this.userGuideToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
-            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Text = "정보(&A)";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // tabControl1
@@ -185,21 +186,23 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(0, 27);
+            this.tabControl1.Location = new System.Drawing.Point(0, 25);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(461, 185);
+            this.tabControl1.Size = new System.Drawing.Size(538, 171);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(453, 159);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage1.Size = new System.Drawing.Size(530, 145);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Player Stats";
+            this.tabPage1.Text = "플레이어 정보";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -217,24 +220,27 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.HPCounter);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(8, 6);
+            this.groupBox1.Location = new System.Drawing.Point(9, 6);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(437, 147);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox1.Size = new System.Drawing.Size(510, 136);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Player Stats";
+            this.groupBox1.Text = "플레이어 정보";
             // 
             // CurrentConfettiCounter
             // 
             this.CurrentConfettiCounter.DecimalPlaces = 10;
-            this.CurrentConfettiCounter.Location = new System.Drawing.Point(318, 35);
+            this.CurrentConfettiCounter.Location = new System.Drawing.Point(371, 32);
+            this.CurrentConfettiCounter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CurrentConfettiCounter.Maximum = new decimal(new int[] {
             9999999,
             0,
             0,
             0});
             this.CurrentConfettiCounter.Name = "CurrentConfettiCounter";
-            this.CurrentConfettiCounter.Size = new System.Drawing.Size(102, 20);
+            this.CurrentConfettiCounter.Size = new System.Drawing.Size(119, 21);
             this.CurrentConfettiCounter.TabIndex = 20;
             // 
             // groupBox3
@@ -243,60 +249,67 @@
             this.groupBox3.Controls.Add(this.IceBookBox);
             this.groupBox3.Controls.Add(this.WaterBookBox);
             this.groupBox3.Controls.Add(this.FireBookBox);
-            this.groupBox3.Location = new System.Drawing.Point(206, 94);
+            this.groupBox3.Location = new System.Drawing.Point(240, 87);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(225, 47);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox3.Size = new System.Drawing.Size(262, 43);
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Bibliofolds";
+            this.groupBox3.Text = "신수";
             // 
             // EarthBookBox
             // 
             this.EarthBookBox.AutoSize = true;
             this.EarthBookBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.EarthBookBox.Location = new System.Drawing.Point(6, 18);
+            this.EarthBookBox.Location = new System.Drawing.Point(7, 17);
+            this.EarthBookBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.EarthBookBox.Name = "EarthBookBox";
-            this.EarthBookBox.Size = new System.Drawing.Size(51, 17);
+            this.EarthBookBox.Size = new System.Drawing.Size(36, 16);
             this.EarthBookBox.TabIndex = 15;
-            this.EarthBookBox.Text = "Earth";
+            this.EarthBookBox.Text = "땅";
             this.EarthBookBox.UseVisualStyleBackColor = true;
             // 
             // IceBookBox
             // 
             this.IceBookBox.AutoSize = true;
             this.IceBookBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IceBookBox.Location = new System.Drawing.Point(173, 18);
+            this.IceBookBox.Location = new System.Drawing.Point(202, 17);
+            this.IceBookBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.IceBookBox.Name = "IceBookBox";
-            this.IceBookBox.Size = new System.Drawing.Size(41, 17);
+            this.IceBookBox.Size = new System.Drawing.Size(48, 16);
             this.IceBookBox.TabIndex = 18;
-            this.IceBookBox.Text = "Ice";
+            this.IceBookBox.Text = "얼음";
             this.IceBookBox.UseVisualStyleBackColor = true;
             // 
             // WaterBookBox
             // 
             this.WaterBookBox.AutoSize = true;
             this.WaterBookBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.WaterBookBox.Location = new System.Drawing.Point(63, 18);
+            this.WaterBookBox.Location = new System.Drawing.Point(74, 17);
+            this.WaterBookBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.WaterBookBox.Name = "WaterBookBox";
-            this.WaterBookBox.Size = new System.Drawing.Size(55, 17);
+            this.WaterBookBox.Size = new System.Drawing.Size(36, 16);
             this.WaterBookBox.TabIndex = 16;
-            this.WaterBookBox.Text = "Water";
+            this.WaterBookBox.Text = "물";
             this.WaterBookBox.UseVisualStyleBackColor = true;
             // 
             // FireBookBox
             // 
             this.FireBookBox.AutoSize = true;
             this.FireBookBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.FireBookBox.Location = new System.Drawing.Point(124, 18);
+            this.FireBookBox.Location = new System.Drawing.Point(145, 17);
+            this.FireBookBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.FireBookBox.Name = "FireBookBox";
-            this.FireBookBox.Size = new System.Drawing.Size(43, 17);
+            this.FireBookBox.Size = new System.Drawing.Size(36, 16);
             this.FireBookBox.TabIndex = 17;
-            this.FireBookBox.Text = "Fire";
+            this.FireBookBox.Text = "불";
             this.FireBookBox.UseVisualStyleBackColor = true;
             // 
             // BagCapacityCounter
             // 
-            this.BagCapacityCounter.Location = new System.Drawing.Point(318, 68);
+            this.BagCapacityCounter.Location = new System.Drawing.Point(371, 63);
+            this.BagCapacityCounter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BagCapacityCounter.Maximum = new decimal(new int[] {
             9999999,
             0,
@@ -308,7 +321,7 @@
             0,
             0});
             this.BagCapacityCounter.Name = "BagCapacityCounter";
-            this.BagCapacityCounter.Size = new System.Drawing.Size(102, 20);
+            this.BagCapacityCounter.Size = new System.Drawing.Size(119, 21);
             this.BagCapacityCounter.TabIndex = 7;
             this.BagCapacityCounter.Value = new decimal(new int[] {
             1,
@@ -318,14 +331,15 @@
             // 
             // CoinsSpentCounter
             // 
-            this.CoinsSpentCounter.Location = new System.Drawing.Point(77, 109);
+            this.CoinsSpentCounter.Location = new System.Drawing.Point(90, 101);
+            this.CoinsSpentCounter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CoinsSpentCounter.Maximum = new decimal(new int[] {
             999999999,
             0,
             0,
             0});
             this.CoinsSpentCounter.Name = "CoinsSpentCounter";
-            this.CoinsSpentCounter.Size = new System.Drawing.Size(88, 20);
+            this.CoinsSpentCounter.Size = new System.Drawing.Size(103, 21);
             this.CoinsSpentCounter.TabIndex = 7;
             this.CoinsSpentCounter.Value = new decimal(new int[] {
             1,
@@ -336,33 +350,37 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(203, 70);
+            this.label5.Location = new System.Drawing.Point(237, 65);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 13);
+            this.label5.Size = new System.Drawing.Size(121, 12);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Confetti Bag Capacity";
+            this.label5.Text = "종잇조각 주머니 용량";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 111);
+            this.label4.Location = new System.Drawing.Point(8, 102);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 13);
+            this.label4.Size = new System.Drawing.Size(45, 12);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Coins Spent";
+            this.label4.Text = "쓴 코인";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(203, 37);
+            this.label6.Location = new System.Drawing.Point(237, 34);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 13);
+            this.label6.Size = new System.Drawing.Size(81, 12);
             this.label6.TabIndex = 4;
-            this.label6.Text = "Current Confetti";
+            this.label6.Text = "현재 종잇조각";
             // 
             // CoinCounter
             // 
-            this.CoinCounter.Location = new System.Drawing.Point(77, 81);
+            this.CoinCounter.Location = new System.Drawing.Point(90, 75);
+            this.CoinCounter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CoinCounter.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -374,7 +392,7 @@
             0,
             0});
             this.CoinCounter.Name = "CoinCounter";
-            this.CoinCounter.Size = new System.Drawing.Size(88, 20);
+            this.CoinCounter.Size = new System.Drawing.Size(103, 21);
             this.CoinCounter.TabIndex = 5;
             this.CoinCounter.Value = new decimal(new int[] {
             1,
@@ -385,15 +403,17 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 83);
+            this.label3.Location = new System.Drawing.Point(8, 77);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 13);
+            this.label3.Size = new System.Drawing.Size(29, 12);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Coins";
+            this.label3.Text = "코인";
             // 
             // MaxHPCounter
             // 
-            this.MaxHPCounter.Location = new System.Drawing.Point(77, 55);
+            this.MaxHPCounter.Location = new System.Drawing.Point(90, 51);
+            this.MaxHPCounter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaxHPCounter.Maximum = new decimal(new int[] {
             999,
             0,
@@ -405,7 +425,7 @@
             0,
             0});
             this.MaxHPCounter.Name = "MaxHPCounter";
-            this.MaxHPCounter.Size = new System.Drawing.Size(88, 20);
+            this.MaxHPCounter.Size = new System.Drawing.Size(103, 21);
             this.MaxHPCounter.TabIndex = 3;
             this.MaxHPCounter.Value = new decimal(new int[] {
             1,
@@ -416,15 +436,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 57);
+            this.label2.Location = new System.Drawing.Point(8, 53);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.Size = new System.Drawing.Size(57, 12);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Max HP";
+            this.label2.Text = "최대 체력";
             // 
             // HPCounter
             // 
-            this.HPCounter.Location = new System.Drawing.Point(77, 29);
+            this.HPCounter.Location = new System.Drawing.Point(90, 27);
+            this.HPCounter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.HPCounter.Maximum = new decimal(new int[] {
             999,
             0,
@@ -436,7 +458,7 @@
             0,
             0});
             this.HPCounter.Name = "HPCounter";
-            this.HPCounter.Size = new System.Drawing.Size(88, 20);
+            this.HPCounter.Size = new System.Drawing.Size(103, 21);
             this.HPCounter.TabIndex = 1;
             this.HPCounter.Value = new decimal(new int[] {
             1,
@@ -448,22 +470,24 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 31);
+            this.label1.Location = new System.Drawing.Point(8, 29);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 13);
+            this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "HP";
+            this.label1.Text = "체력";
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.groupBox6);
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(453, 159);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage2.Size = new System.Drawing.Size(530, 145);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Inventory";
+            this.tabPage2.Text = "인벤토리";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox6
@@ -478,83 +502,92 @@
             this.groupBox6.Controls.Add(this.ItemSelectBox);
             this.groupBox6.Controls.Add(this.label9);
             this.groupBox6.Controls.Add(this.UsedEnduranceCounter);
-            this.groupBox6.Location = new System.Drawing.Point(208, 4);
+            this.groupBox6.Location = new System.Drawing.Point(243, 4);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(241, 149);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox6.Size = new System.Drawing.Size(281, 138);
             this.groupBox6.TabIndex = 17;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Item Editor";
+            this.groupBox6.Text = "아이템 편집기";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(9, 105);
+            this.label14.Location = new System.Drawing.Point(10, 97);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(58, 13);
+            this.label14.Size = new System.Drawing.Size(69, 12);
             this.label14.TabIndex = 17;
-            this.label14.Text = "Item Count";
+            this.label14.Text = "아이템 갯수";
             // 
             // ItemCounter
             // 
-            this.ItemCounter.Location = new System.Drawing.Point(12, 123);
+            this.ItemCounter.Location = new System.Drawing.Point(14, 114);
+            this.ItemCounter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ItemCounter.Maximum = new decimal(new int[] {
             99,
             0,
             0,
             0});
             this.ItemCounter.Name = "ItemCounter";
-            this.ItemCounter.Size = new System.Drawing.Size(97, 20);
+            this.ItemCounter.Size = new System.Drawing.Size(113, 21);
             this.ItemCounter.TabIndex = 18;
             // 
             // ItemNameLabel
             // 
             this.ItemNameLabel.AutoSize = true;
-            this.ItemNameLabel.Location = new System.Drawing.Point(9, 21);
+            this.ItemNameLabel.Location = new System.Drawing.Point(10, 19);
+            this.ItemNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ItemNameLabel.Name = "ItemNameLabel";
-            this.ItemNameLabel.Size = new System.Drawing.Size(103, 13);
+            this.ItemNameLabel.Size = new System.Drawing.Size(120, 12);
             this.ItemNameLabel.TabIndex = 4;
             this.ItemNameLabel.Text = "Selected Item Name";
             // 
             // UsedBreakRateCounter
             // 
-            this.UsedBreakRateCounter.Location = new System.Drawing.Point(132, 84);
+            this.UsedBreakRateCounter.Location = new System.Drawing.Point(154, 78);
+            this.UsedBreakRateCounter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.UsedBreakRateCounter.Maximum = new decimal(new int[] {
             999999,
             0,
             0,
             0});
             this.UsedBreakRateCounter.Name = "UsedBreakRateCounter";
-            this.UsedBreakRateCounter.Size = new System.Drawing.Size(97, 20);
+            this.UsedBreakRateCounter.Size = new System.Drawing.Size(113, 21);
             this.UsedBreakRateCounter.TabIndex = 15;
             // 
             // ItemChangesApply
             // 
             this.ItemChangesApply.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ItemChangesApply.Location = new System.Drawing.Point(122, 120);
+            this.ItemChangesApply.Location = new System.Drawing.Point(142, 111);
+            this.ItemChangesApply.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ItemChangesApply.Name = "ItemChangesApply";
-            this.ItemChangesApply.Size = new System.Drawing.Size(113, 23);
+            this.ItemChangesApply.Size = new System.Drawing.Size(132, 21);
             this.ItemChangesApply.TabIndex = 16;
-            this.ItemChangesApply.Text = "Apply Item Changes";
+            this.ItemChangesApply.Text = "아이템 변경사항 저장";
             this.ItemChangesApply.UseVisualStyleBackColor = true;
             this.ItemChangesApply.Click += new System.EventHandler(this.ItemChangesApply_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(129, 66);
+            this.label10.Location = new System.Drawing.Point(150, 61);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(89, 13);
+            this.label10.Size = new System.Drawing.Size(69, 12);
             this.label10.TabIndex = 14;
-            this.label10.Text = "Used Break Rate";
+            this.label10.Text = "파괴 가능성";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 45);
+            this.label7.Location = new System.Drawing.Point(10, 42);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 13);
+            this.label7.Size = new System.Drawing.Size(97, 12);
             this.label7.TabIndex = 9;
-            this.label7.Text = "Change Item To";
+            this.label7.Text = "아이템 변경하기:";
             // 
             // ItemSelectBox
             // 
@@ -593,50 +626,57 @@
             "Pow Block",
             "Accessory",
             "Desert Whistle"});
-            this.ItemSelectBox.Location = new System.Drawing.Point(97, 42);
+            this.ItemSelectBox.Location = new System.Drawing.Point(113, 39);
+            this.ItemSelectBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ItemSelectBox.Name = "ItemSelectBox";
-            this.ItemSelectBox.Size = new System.Drawing.Size(132, 21);
+            this.ItemSelectBox.Size = new System.Drawing.Size(153, 20);
             this.ItemSelectBox.TabIndex = 10;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(9, 66);
+            this.label9.Location = new System.Drawing.Point(10, 61);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 13);
+            this.label9.Size = new System.Drawing.Size(81, 12);
             this.label9.TabIndex = 12;
-            this.label9.Text = "Used Endurance";
+            this.label9.Text = "사용한 내구도";
             // 
             // UsedEnduranceCounter
             // 
-            this.UsedEnduranceCounter.Location = new System.Drawing.Point(12, 84);
+            this.UsedEnduranceCounter.Location = new System.Drawing.Point(14, 78);
+            this.UsedEnduranceCounter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.UsedEnduranceCounter.Maximum = new decimal(new int[] {
             999999,
             0,
             0,
             0});
             this.UsedEnduranceCounter.Name = "UsedEnduranceCounter";
-            this.UsedEnduranceCounter.Size = new System.Drawing.Size(97, 20);
+            this.UsedEnduranceCounter.Size = new System.Drawing.Size(113, 21);
             this.UsedEnduranceCounter.TabIndex = 13;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.ItemListBox);
-            this.groupBox2.Location = new System.Drawing.Point(9, 4);
+            this.groupBox2.Location = new System.Drawing.Point(10, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(196, 149);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox2.Size = new System.Drawing.Size(229, 138);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Items";
+            this.groupBox2.Text = "아이템";
             // 
             // ItemListBox
             // 
             this.ItemListBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ItemListBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ItemListBox.FormattingEnabled = true;
-            this.ItemListBox.Location = new System.Drawing.Point(3, 16);
+            this.ItemListBox.ItemHeight = 12;
+            this.ItemListBox.Location = new System.Drawing.Point(4, 17);
+            this.ItemListBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ItemListBox.Name = "ItemListBox";
-            this.ItemListBox.Size = new System.Drawing.Size(190, 130);
+            this.ItemListBox.Size = new System.Drawing.Size(221, 118);
             this.ItemListBox.TabIndex = 0;
             this.ItemListBox.SelectedIndexChanged += new System.EventHandler(this.ItemListBox_SelectedIndexChanged);
             // 
@@ -649,54 +689,59 @@
             this.tabPage4.Controls.Add(this.groupBox5);
             this.tabPage4.Controls.Add(this.groupBox4);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(453, 159);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage4.Size = new System.Drawing.Size(530, 145);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Extras";
+            this.tabPage4.Text = "기타";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // ToadPointCounter
             // 
-            this.ToadPointCounter.Location = new System.Drawing.Point(319, 121);
+            this.ToadPointCounter.Location = new System.Drawing.Point(372, 112);
+            this.ToadPointCounter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ToadPointCounter.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
             this.ToadPointCounter.Name = "ToadPointCounter";
-            this.ToadPointCounter.Size = new System.Drawing.Size(79, 20);
+            this.ToadPointCounter.Size = new System.Drawing.Size(92, 21);
             this.ToadPointCounter.TabIndex = 3;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(316, 105);
+            this.label15.Location = new System.Drawing.Point(369, 97);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(64, 13);
+            this.label15.Size = new System.Drawing.Size(93, 12);
             this.label15.TabIndex = 2;
-            this.label15.Text = "Toad Points";
+            this.label15.Text = "키노피오 포인트";
             // 
             // GameOverCounter
             // 
-            this.GameOverCounter.Location = new System.Drawing.Point(220, 121);
+            this.GameOverCounter.Location = new System.Drawing.Point(257, 112);
+            this.GameOverCounter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.GameOverCounter.Maximum = new decimal(new int[] {
             999999,
             0,
             0,
             0});
             this.GameOverCounter.Name = "GameOverCounter";
-            this.GameOverCounter.Size = new System.Drawing.Size(86, 20);
+            this.GameOverCounter.Size = new System.Drawing.Size(100, 21);
             this.GameOverCounter.TabIndex = 1;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(217, 105);
+            this.label13.Location = new System.Drawing.Point(253, 97);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 13);
+            this.label13.Size = new System.Drawing.Size(57, 12);
             this.label13.TabIndex = 0;
-            this.label13.Text = "Gameovers";
+            this.label13.Text = "게임 오버";
             // 
             // groupBox5
             // 
@@ -706,88 +751,98 @@
             this.groupBox5.Controls.Add(this.PlaytimeMinuteCounter);
             this.groupBox5.Controls.Add(this.label8);
             this.groupBox5.Controls.Add(this.PlaytimeHourCounter);
-            this.groupBox5.Location = new System.Drawing.Point(9, 89);
+            this.groupBox5.Location = new System.Drawing.Point(10, 82);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(200, 67);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox5.Size = new System.Drawing.Size(233, 62);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Play Time";
+            this.groupBox5.Text = "플레이 시간";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(128, 16);
+            this.label12.Location = new System.Drawing.Point(149, 15);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(49, 13);
+            this.label12.Size = new System.Drawing.Size(17, 12);
             this.label12.TabIndex = 5;
-            this.label12.Text = "Seconds";
+            this.label12.Text = "초";
             // 
             // PlaytimeSecondCounter
             // 
-            this.PlaytimeSecondCounter.Location = new System.Drawing.Point(131, 32);
+            this.PlaytimeSecondCounter.Location = new System.Drawing.Point(153, 30);
+            this.PlaytimeSecondCounter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PlaytimeSecondCounter.Maximum = new decimal(new int[] {
             59,
             0,
             0,
             0});
             this.PlaytimeSecondCounter.Name = "PlaytimeSecondCounter";
-            this.PlaytimeSecondCounter.Size = new System.Drawing.Size(55, 20);
+            this.PlaytimeSecondCounter.Size = new System.Drawing.Size(64, 21);
             this.PlaytimeSecondCounter.TabIndex = 4;
             this.PlaytimeSecondCounter.ValueChanged += new System.EventHandler(this.PlaytimeSecondCounter_ValueChanged);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(67, 16);
+            this.label11.Location = new System.Drawing.Point(78, 15);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(44, 13);
+            this.label11.Size = new System.Drawing.Size(17, 12);
             this.label11.TabIndex = 3;
-            this.label11.Text = "Minutes";
+            this.label11.Text = "분";
             // 
             // PlaytimeMinuteCounter
             // 
-            this.PlaytimeMinuteCounter.Location = new System.Drawing.Point(70, 32);
+            this.PlaytimeMinuteCounter.Location = new System.Drawing.Point(82, 30);
+            this.PlaytimeMinuteCounter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PlaytimeMinuteCounter.Maximum = new decimal(new int[] {
             59,
             0,
             0,
             0});
             this.PlaytimeMinuteCounter.Name = "PlaytimeMinuteCounter";
-            this.PlaytimeMinuteCounter.Size = new System.Drawing.Size(55, 20);
+            this.PlaytimeMinuteCounter.Size = new System.Drawing.Size(64, 21);
             this.PlaytimeMinuteCounter.TabIndex = 2;
             this.PlaytimeMinuteCounter.ValueChanged += new System.EventHandler(this.PlaytimeMinuteCounter_ValueChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 16);
+            this.label8.Location = new System.Drawing.Point(7, 15);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.Size = new System.Drawing.Size(29, 12);
             this.label8.TabIndex = 1;
-            this.label8.Text = "Hours";
+            this.label8.Text = "시간";
             // 
             // PlaytimeHourCounter
             // 
-            this.PlaytimeHourCounter.Location = new System.Drawing.Point(9, 32);
+            this.PlaytimeHourCounter.Location = new System.Drawing.Point(10, 30);
+            this.PlaytimeHourCounter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PlaytimeHourCounter.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
             this.PlaytimeHourCounter.Name = "PlaytimeHourCounter";
-            this.PlaytimeHourCounter.Size = new System.Drawing.Size(55, 20);
+            this.PlaytimeHourCounter.Size = new System.Drawing.Size(64, 21);
             this.PlaytimeHourCounter.TabIndex = 0;
             this.PlaytimeHourCounter.ValueChanged += new System.EventHandler(this.PlaytimeHourCounter_ValueChanged);
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.PartnerSelectBox);
-            this.groupBox4.Location = new System.Drawing.Point(9, 7);
+            this.groupBox4.Location = new System.Drawing.Point(10, 6);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(140, 49);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox4.Size = new System.Drawing.Size(163, 45);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Current Party Member";
+            this.groupBox4.Text = "현재 동료";
             // 
             // PartnerSelectBox
             // 
@@ -795,38 +850,40 @@
             this.PartnerSelectBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PartnerSelectBox.FormattingEnabled = true;
             this.PartnerSelectBox.Items.AddRange(new object[] {
-            "None",
-            "Bowser (Folded)",
-            "Bobby",
-            "Bone Goomba",
-            "Sombrero Guy",
-            "Prof. Toad",
-            "Green Toad",
-            "Luigi",
-            "Spike",
-            "Bowser Jr.",
-            "Kamek",
-            "Bowser"});
-            this.PartnerSelectBox.Location = new System.Drawing.Point(9, 19);
+            "없음",
+            "쿠파 (접힘)",
+            "폭탄병",
+            "좀비굼바",
+            "솜브레로헤이호",
+            "고고학자 키노피오",
+            "키노피오",
+            "루이지",
+            "가봉",
+            "쿠파주니어",
+            "마귀",
+            "쿠파"});
+            this.PartnerSelectBox.Location = new System.Drawing.Point(10, 18);
+            this.PartnerSelectBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PartnerSelectBox.Name = "PartnerSelectBox";
-            this.PartnerSelectBox.Size = new System.Drawing.Size(121, 21);
+            this.PartnerSelectBox.Size = new System.Drawing.Size(140, 20);
             this.PartnerSelectBox.TabIndex = 0;
             this.PartnerSelectBox.SelectedIndexChanged += new System.EventHandler(this.PartnerSelectBox_SelectedIndexChanged);
             // 
             // MainEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(461, 211);
+            this.ClientSize = new System.Drawing.Size(538, 195);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.Name = "MainEditor";
-            this.Text = "Paper Mario: The Origami King Save Editor (v1.1)";
+            this.Text = "페이퍼 마리오 종이접기 킹 세이브 에디터 (v1.2)";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainEditor_KeyDown);
             this.menuStrip1.ResumeLayout(false);

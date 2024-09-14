@@ -21,10 +21,10 @@ namespace Paper_Mario_TOK_Save_Editor
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string appver = "v1.1";
+            string appver = "v1.2";
             XmlDocument appinfor = new XmlDocument();
 
-            appinfor.Load("https://raw.githubusercontent.com/zSupremoz/Paper-Mario-The-Origami-King-Save-Editor/master/appinfo.xml");
+            appinfor.Load("https://raw.githubusercontent.com/Lastorder-DC/Paper-Mario-The-Origami-King-Save-Editor/master/appinfo.xml");
             XmlElement root = appinfor.DocumentElement;
             XmlNodeList nodes = root.SelectNodes("//appinfo");
 
@@ -35,10 +35,10 @@ namespace Paper_Mario_TOK_Save_Editor
 
                 if (appver != appver_xml)
                 {
-                    DialogResult Update = MessageBox.Show("The application is out of date! Would you like to go to the latest release on GitHub?", "Application Update Available", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                    DialogResult Update = MessageBox.Show("프로그램 버전이 낮습니다. Github에서 최신 버전을 다운로드하시겠습니까?", "최신 업데이트 있음", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                     if (Update == DialogResult.Yes)
                     {
-                        string ReleaseLink = "https://github.com/zSupremoz/Paper-Mario-The-Origami-King-Save-Editor/releases/tag/" + tag;
+                        string ReleaseLink = "https://github.com/Lastorder-DC/Paper-Mario-The-Origami-King-Save-Editor/releases/tag/" + tag;
                         Process.Start(ReleaseLink);
                     }
                 }
@@ -49,7 +49,7 @@ namespace Paper_Mario_TOK_Save_Editor
             SaveCheck();
             if (Properties.Settings.Default.BackupReminder == true)
             {
-                MessageBox.Show("Please be sure to always make backups of your save files. You can enable a setting to automatically create backups when opening a save in the Settings tab under File -> Settings.", "Paper Mario: The Origami King Save Editor", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("세이브 파일을 백업하는것을 잊지 마세요. 파일 -> 설정에서 자동 백업 생성 기능을 켤 수 있습니다.", "페이퍼 마리오 종이접기 킹 세이브 에디터", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -576,7 +576,7 @@ namespace Paper_Mario_TOK_Save_Editor
                     break;
                 case 10:
                     val["party_infor"]["partyMemberNum"] = 1;
-                    val["party_infor"]["partyMemberName"]["0"] = "P_KMP";
+                    val["party_infor"]["partyMemberName"]["0"] = "P_KMK";
                     JsonRead = obj.ToString();
                     break;
                 case 11:
@@ -922,29 +922,29 @@ namespace Paper_Mario_TOK_Save_Editor
             switch (partnerID)
             {
                 case "P_KPAO":
-                    return "Bowser (Folded)";
+                    return "쿠파 (접힘)";
                 case "P_BOME":
-                    return "Bobby";
+                    return "폭탄병";
                 case "P_KURB":
-                    return "Bone Goomba";
+                    return "좀비굼바";
                 case "P_HEISOM":
-                    return "Sombrero Guy";
+                    return "솜브레로헤이호";
                 case "P_KNPP":
-                    return "Prof. Toad";
+                    return "고고학자 키노피오";
                 case "P_KNP":
-                    return "Green Toad";
+                    return "키노피오";
                 case "P_LUG":
-                    return "Luigi";
+                    return "루이지";
                 case "P_GBN":
-                    return "Spike";
+                    return "가봉";
                 case "P_KPAJ_Crown":
-                    return "Bowser Jr.";
-                case "P_KMP":
-                    return "Kamek";
+                    return "쿠파주니어";
+                case "P_KMK":
+                    return "마귀";
                 case "P_KPA":
-                    return "Bowser";
+                    return "쿠파";
                 case "":
-                    return "None";
+                    return "없음";
             }
             return "Error";
 
