@@ -576,7 +576,7 @@ namespace Paper_Mario_TOK_Save_Editor
                     break;
                 case 10:
                     val["party_infor"]["partyMemberNum"] = 1;
-                    val["party_infor"]["partyMemberName"]["0"] = "P_KMP";
+                    val["party_infor"]["partyMemberName"]["0"] = "P_KMK";
                     JsonRead = obj.ToString();
                     break;
                 case 11:
@@ -939,7 +939,7 @@ namespace Paper_Mario_TOK_Save_Editor
                     return "Spike";
                 case "P_KPAJ_Crown":
                     return "Bowser Jr.";
-                case "P_KMP":
+                case "P_KMK":
                     return "Kamek";
                 case "P_KPA":
                     return "Bowser";
